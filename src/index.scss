@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+$family: Roboto, sans-serif;
+$blacksipbg: white;
+
+/* General */
+
+@mixin addFlexCenter() {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+@mixin textFamily() {
+  font-family: $family;
+}
+
+body {
+  background-color: $blacksipbg;
+  @include textFamily();
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+/* Header */
+.header-container {
+  @include addFlexCenter();
+}
+
+h1 {
+  .header {
+    text-align: center;
+  }
+}
+
+h2 {
+  .header {
+    text-align: center;
+  }
+}
+/* Header */
+
+/* Body */
+.input-group {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0.1rem;
+}
+.input-group-addon {
+  background-color: black;
+}
+.input-group-text {
+  display: flex;
+  margin: 0.5rem;
+}
+.input {
+  font-size: 18;
+}
+.section-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  right-section {
+    display: flex;
+    flex-direction: column;
+  }
+  left-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.btn-action {
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  border: none;
+  margin: auto 3px;
+}
+
+input[type="checkbox"] {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+/* Body */
