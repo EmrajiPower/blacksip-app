@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
+//Api Custom Hook
 function Api({ method, url, query, body = null }) {
   const [status, setStatus] = useState(null);
   const [data, setData] = useState([]);
@@ -37,5 +38,6 @@ function Api({ method, url, query, body = null }) {
 
   return { status, data };
 }
+//Api Custom Hook
 
 export default Api;

@@ -19,6 +19,7 @@ import {
 import HandleMatchRegex from "../utils/HandleMatchRegex";
 import Api from "../Api";
 
+//Arreglo de Objetos que sirve la estructura de los formularios
 let formContext = [
   {
     row: 1,
@@ -116,6 +117,7 @@ let formContext = [
     ],
   },
 ];
+//Arreglo de Objetos que sirve la estructura de los formularios
 
 function Body() {
   //[Fetch States]
